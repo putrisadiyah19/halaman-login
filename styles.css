@@ -1,0 +1,73 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.landing-page {
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8));
+    background-size: 400% 400%;
+    animation: glowing 15s ease-in-out infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+
+@keyframes glowing {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glow {
+    text-shadow: 0 0 20px #00ddff, 0 0 30px #ffcc00, 0 0 40px #ffcc00;
+    margin: 20px 0;
+}
+
+.glow-button {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ededeb;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    display: flex;
+    flex-direction: row; /* Mengatur card menjadi baris */
+}
+
+.card-img-top {
+    width: 150px; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto; /* Membuat tinggi gambar otomatis untuk menjaga proporsi */
+    object-fit: cover; /* Mengatur gambar agar tidak terpotong dan mengisi area */
+}
+
+.card-body {
+    flex-grow: 1; /* Memungkinkan body untuk mengisi ruang tersisa */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Menjaga jarak antar elemen dalam card body */
+}
+
+.text-end {
+    text-align: right; /* Meratakan tombol ke kanan */
+}
+
+.rating {
+    font-size: 1.2em;
+    color: gold;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-footer {
+    background-color: #f1f1f1;
+}
